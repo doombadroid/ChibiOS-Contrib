@@ -31,6 +31,7 @@
     .section    .text, "ax"
     .align      4
     .global     usb_memcpy
+.type usb_memcpy, %function
 
 /* size_t usb_memcpy(volatile void* destination, const volatile void* source, size_t num); */
 usb_memcpy:
